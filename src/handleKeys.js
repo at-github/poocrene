@@ -17,8 +17,8 @@ export const countUniqKeys = keys => {
 
     cacheKeys.push(key)
 
-    const keyCount = keys.filter(currentKey => currentKey === key)
-    keysCounts.push({id: key, count: keyCount.length})
+    const keyCollection = keys.filter(currentKey => currentKey === key)
+    keysCounts.push({id: key, count: keyCollection.length})
   })
 
   return keysCounts
