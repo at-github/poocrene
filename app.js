@@ -17,8 +17,8 @@ const getIdFromLine = line => {
 
 await readLogs(logsPath, getIdFromLine)
 
-const data = countUniqKeys(ids)
+const result = countUniqKeys(ids)
   .sort((current, next) => next.count - current.count)
   .slice(0, mostFrequentItemsNumber)
 
-console.table(data)
+console.table(result)
