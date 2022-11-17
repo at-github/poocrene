@@ -1,17 +1,17 @@
 ## Launch the counter
-Notes: By default, the script will try to find a `logs` folder into the project,
+Notes: By default, the script will try to find a `logs` folder in the project,
 and display the fifth popular ids
 ```Shell
 npm start
 ```
 
-You can specify logs path by adding optional parameter `path`
+You can specify the log's path by adding an optional parameter `path`
 
 ```Shell
 npm start -- path=your-path
 ```
 
-You can specify how many popular ids you want to see
+You can choose how many popular ids you want to see
 
 ```Shell
 npm start -- count=10
