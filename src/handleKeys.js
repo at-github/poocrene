@@ -6,13 +6,17 @@ export const countUniqKeys = keys => {
     throw new Error('Empty keys provided')
 
   let keysCounts = []
-  let cacheKeys = []
+  let cacheKeys  = []
 
-  keys.map(key => {
+  keys.map((key = null) => {
+    if (key === null)
+      return
+
     if (cacheKeys.find(cacheKey => cacheKey === key))
       return
 
     cacheKeys.push(key)
+
     const keyCount = keys.filter(currentKey => currentKey === key)
     keysCounts.push({id: key, count: keyCount.length})
   })
