@@ -1,0 +1,17 @@
+{
+  "name": "enercoop_test",
+  "version": "0.0.1",
+  "description": "Application for the technical test from enercoop",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "jest": "^29.3.1"
+  }
+}
