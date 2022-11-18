@@ -1,24 +1,22 @@
 ## Launch the counter
-Notes: By default, the script will try to find a `logs` folder in the project,
+Note: By default, the script will try to find a `logs` folder in the project,
 and display the fifth popular ids
 ```Shell
 npm start
 ```
 
 You can specify the log's path by adding an optional parameter `path`
-
 ```Shell
 npm start -- path=your-path
 ```
 
 You can choose how many popular ids you want to see
-
 ```Shell
 npm start -- count=10
 ```
 
 ## Launch the tests
-`npm` was used to perform ES import module and for jest _TU_ framework.
+`npm` was used to use ES import module and for jest.
 Be sure `jest` is installed :
 ```Shell
 npm install
